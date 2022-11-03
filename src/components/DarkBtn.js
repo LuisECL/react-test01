@@ -2,23 +2,20 @@ import {React, useState} from "react";
 import "./DarkBtn.scss"
 
 function DarkBtn() {
-  const [theme, setTheme] = useState("Light")
+  const [dark, setDark] = useState(false)
 
-  function handleTheme(e){
-    if(theme === "Light"){
-      setTheme("Dark");
-      e.target.classList.toggle("dark");
+  function handleTheme(){
+    if(!dark){
+      setDark(true);
     } else {
-      setTheme("Light");
-      e.target.classList.toggle("dark");
-
+      setDark(false);
     }
   }
 
   return(
     <div>
-      <button className="theme-btn" onClick={handleTheme}>
-        {theme} Theme
+      <button className={`theme-btn ${dark? "dark" : ""}`} onClick={handleTheme}>
+        {!dark? "Light" : "Dark"} Theme
       </button>
     </div>
   )

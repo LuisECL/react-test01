@@ -12,6 +12,7 @@ $black-dark: #0a0a0a;
   background-color: $white-light;
   color: $black-mid;
   cursor: pointer;
+  transition: all .2s ease;
 
   &:hover{
     background-color: $white-dark;
