@@ -12,19 +12,23 @@ $black-dark: #0a0a0a;
 }
 
 .nav-container {
-  background-color: #1D1D1D;
+  background-color: $white-mid;
   width: 100%;
+  @include vert-strech-center();
+  justify-content: center;
+
   nav {
-    max-width: 1000px;
+    width: 1000px;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 0 2rem;
     height: 80px;
   }
 
   span {
     margin-right: auto;
-    color: $white-mid;
+    color: $black-mid;
     @include vert-strech-center()
   }
 
@@ -39,12 +43,12 @@ $black-dark: #0a0a0a;
     @include vert-strech-center();
 
     &:hover {
-      background-color: $black-light;
+      background-color: $white-dark;
     }
 
     a {
       text-decoration: none;
-      color: $white-mid;
+      color: $black-mid;
       width: 100%;
       @include vert-strech-center();
       justify-content: center;
