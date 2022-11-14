@@ -55,3 +55,22 @@ $black-dark: #0a0a0a;
     }
   }
 }
+
+
+.nav-container.dark {
+  background-color: $black-mid;
+
+  span {
+    color: $white-mid;
+  }
+
+  .nav-item {
+    &:hover {
+      background-color: $black-dark;
+    }
+
+    a {
+      color: $white-mid;
+    }
+  }
+}

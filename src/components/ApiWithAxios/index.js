@@ -9,8 +9,6 @@ function ApiWithAxios(){
     .then(res => setFilms(res.data.Search))
   },[]);
 
-  console.log(films);
-
   return (
     <>
     <h3>Here are some films!</h3>
